@@ -1,6 +1,7 @@
 import discord
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.default())
+
 
 @client.event
 async def on_ready():
@@ -14,4 +15,4 @@ async def on_message(message):
     if message.content.startswith("$hello"):
         await message.channel.send("Hello!")
 
-client.run(MTAyMjkxNTE1MzM4NzMzNTc4NA.GsKDox.An1vhO2ecmJbTl0vtDPWE3yzLl-eFQx2ChBRcI)
+client.run('MTAyMjkxNTE1MzM4NzMzNTc4NA.GqtR_w.XE9Dd9gAhrZUudza9Caahyo37t86GaOdKQ4qdg')
